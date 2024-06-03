@@ -1,3 +1,2 @@
-SELECT ProductID, Name, ProductNumber, ListPrice
-FROM Production.Product
-ORDER BY Name ASC;
+select * from SalesLT.Product
+order by Name
