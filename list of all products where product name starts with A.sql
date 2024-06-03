@@ -1,3 +1,2 @@
-SELECT ProductID, Name, ProductNumber, ListPrice
-FROM Production.Product
-WHERE Name LIKE 'A%';
+select * from SalesLT.Product
+where Name like 'A%'
