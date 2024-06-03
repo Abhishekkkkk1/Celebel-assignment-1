@@ -1,5 +1,4 @@
-SELECT c.CustomerID, p.FirstName, p.LastName
-FROM Sales.Customer AS c
-JOIN Person.Person AS p ON c.PersonID = p.BusinessEntityID
-JOIN Person.Address AS a ON p.BusinessEntityID = a.BusinessEntityID
-WHERE a.CountryRegionCode IN ('UK', 'USA');
+select * from SalesLT.Customer
+join SalesLT.CustomerAddress on Customer.CustomerID = CustomerAddress.CustomerID
+join SalesLT.Address on Address.AddressID = CustomerAddress.AddressID
+where CountryRegion = 'United Kingdom' or CountryRegion = 'United States'
